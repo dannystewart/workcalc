@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from dsbase.animation import walking_animation
+from dsbase.animate import walking_man
 from dsbase.log import LocalLogger, TimeAwareLogger
 from dsbase.text import Text
 from dsbase.util import dsbase_setup
@@ -86,7 +86,7 @@ class WorkCalculator:
         self.summary_analyzer = SummaryAnalyzer()
         self.time_analyzer = TimeAnalyzer()
 
-        with walking_animation(
+        with walking_man(
             f"\nAnalyzing {self.data_source.source_name.capitalize()} data...", "cyan"
         ):
             self.work_items = self.collect_work_items()

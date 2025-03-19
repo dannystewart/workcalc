@@ -8,7 +8,7 @@ readme = "README.md"
 packages = [{ include = "workcalc", from = "src" }]
 requires-python = ">=3.12"
 dependencies = [
-    "dsbase (>=0.2.0a1)",
+    "dsbase (==0.2.0a3)",
 ]
 
 [tool.poetry.group.dev.dependencies]

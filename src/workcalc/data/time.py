@@ -10,7 +10,7 @@ from dsbase.text import Text
 if TYPE_CHECKING:
     from datetime import datetime
 
-    from workcalc.stats import WorkStats
+    from workcalc.data import WorkStats
 
 
 class DayOfWeek(Enum):

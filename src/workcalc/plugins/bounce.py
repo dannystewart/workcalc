@@ -6,11 +6,11 @@ from pathlib import Path
 from typing import TYPE_CHECKING, ClassVar
 
 from dsbase.files import list_files
+from dsbase.files.macos import get_timestamps
 from dsbase.log import LocalLogger
-from dsbase.macos import get_timestamps
 
-from workcalc.plugins import DataSourcePlugin
-from workcalc.work_item import WorkItem
+from workcalc import DataSourcePlugin
+from workcalc.data import WorkItem
 
 if TYPE_CHECKING:
     from collections.abc import Iterator

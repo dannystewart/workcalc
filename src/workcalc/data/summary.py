@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, Any
 
 from dsbase.text import Text
 
-from workcalc.stats import FormattedTime
+from workcalc.data import FormattedTime
 
 if TYPE_CHECKING:
     from datetime import date, datetime
